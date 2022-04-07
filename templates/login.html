@@ -1,0 +1,32 @@
+{% extends "layout.html" %}
+{% block title %}
+   Inicio Sesion
+{% endblock %}
+
+{% block main %}
+<a href="/"><button type="button" class="btn-close btn-close-white" aria-label="Close"></button></a>
+<center>
+    <h1 style="font-family: 'Rubik Glitch', cursive;color: antiquewhite;">¡Inicia sesión para jugar!</h1>
+    <img src="https://d35aaqx5ub95lt.cloudfront.net/images/331a32943ff73be28537dfc7469d5639.svg" ><br>
+<form action="/login" class="was-validated" method="post">
+  <div class="form-group">
+    <br><br><label style="font-family: 'Rubik Bubbles', cursive;color: antiquewhite;" for="uname">Usuario:</label>
+    <input style=" width:500px" type="text" class="form-control" id="uname" placeholder="Enter username" name="username" required>
+    <div style="font-family: 'Rubik Bubbles', cursive;" class="valid-feedback">Valido.</div>
+    <div style="font-family: 'Rubik Bubbles', cursive;" class="invalid-feedback">Por favor rellene este campo.</div>
+  </div>
+  <div class="form-group">
+    <label style="font-family: 'Rubik Bubbles', cursive;color: antiquewhite;" for="pwd">Password:</label>
+    <input style=" width:500px" type="password" class="form-control" id="pwd" placeholder="Enter password" name="password" required>
+    <div style="font-family: 'Rubik Bubbles', cursive;" class="valid-feedback">Valido.</div>
+    <div style="font-family: 'Rubik Bubbles', cursive;" class="invalid-feedback">Por favor rellene este campo.</div>
+  </div>
+
+  <button style="font-family: 'Rubik Bubbles', cursive;color: antiquewhite;width:500px" type="submit" class="btn btn-primary">Iniciar sesión</button><br><br>
+  <!--<p>Already have an account? <a href="/login">Log in!</a></p><br><br><br><br> -->
+
+
+</form>
+</div>
+</center>
+{% endblock %}

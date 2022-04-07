@@ -1,58 +1,44 @@
-   <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
-    <title>register</title>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,700&display=swap');
-        </style>
-</head>
-<body>
+{% extends "layout.html" %}
+{% block title %}
+   Register
+{% endblock %}
+
+{% block main %}
+<a href="/"><button type="button" class="btn-close btn-close-white" aria-label="Close"></button></a>
     <center>
-        <div class="container">
-          <div class="jumbotron">
-            <h1  style="font-family:  'Lora', serif;">¡Register to read!</h1>
-          </div>
-        </div>
+            <h1 style="font-family: 'Rubik Glitch', cursive;color: antiquewhite;">¡Registrate para jugar!</h1>
+            <img src="https://d35aaqx5ub95lt.cloudfront.net/images/331a32943ff73be28537dfc7469d5639.svg" ><br>
         <form action="/register" class="was-validated" method="post">
           <div class="form-group">
-            <br><br><label for="uname">Username:</label>
-            <input type="text" class="form-control" id="uname" placeholder="Enter username" name="username" required>
-            <div class="valid-feedback">Valid.</div>
-            <div class="invalid-feedback">Please fill out this field.</div>
+            <br><br><label style="font-family: 'Rubik Bubbles', cursive;color: antiquewhite;" for="uname">Usuario:</label>
+            <input style=" width:500px" type="text" class="form-control" id="uname" placeholder="Enter username" name="username" required>
+            <div style="font-family: 'Rubik Bubbles', cursive;" class="valid-feedback">Valido.</div>
+            <div style="font-family: 'Rubik Bubbles', cursive;" class="invalid-feedback">Por favor rellene este campo.</div>
           </div>
           <div class="form-group">
-            <label for="pwd">Password:</label>
-            <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="password" required>
-            <div class="valid-feedback">Valid.</div>
-            <div class="invalid-feedback">Please fill out this field.</div>
+            <label style="font-family: 'Rubik Bubbles', cursive;color: antiquewhite;" for="pwd">Password:</label>
+            <input style=" width:500px" type="password" class="form-control" id="pwd" placeholder="Enter password" name="password" required>
+            <div style="font-family: 'Rubik Bubbles', cursive;" class="valid-feedback">Valido.</div>
+            <div style="font-family: 'Rubik Bubbles', cursive;" class="invalid-feedback">Por favor rellene este campo.</div>
           </div>
           <div class="form-group">
-            <label for="pwd">Confirm your password:</label>
-            <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="confirmation" required>
-            <div class="valid-feedback">Valid.</div>
-            <div class="invalid-feedback">Please fill out this field.</div>
+            <label style="font-family: 'Rubik Bubbles', cursive;color: antiquewhite;" for="pwd">Confirm your password:</label>
+            <input style=" width:500px" type="password" class="form-control" id="pwd" placeholder="Enter password" name="confirmation" required>
+            <div style="font-family: 'Rubik Bubbles', cursive;" class="valid-feedback">Valido.</div>
+            <div style="font-family: 'Rubik Bubbles', cursive;" class="invalid-feedback">Por favor rellene este campo.</div>
           </div>
           <div class="form-group form-check">
-            <label class="form-check-label">
-              <input class="form-check-input" type="checkbox" name="remember" required> I agree on terms and politics
-              stablished
-              <div class="valid-feedback">Valid.</div>
-              <div class="invalid-feedback">Check this checkbox to continue.</div>
+            <label style="font-family: 'Rubik Bubbles', cursive;color: antiquewhite;" class="form-check-label">
+              <input class="form-check-input" type="checkbox" name="remember" required> Estoy deacuerdo con los términos establecidos
+              <div style="font-family: 'Rubik Bubbles', cursive;" class="valid-feedback">Valido.</div>
+              <div style="font-family: 'Rubik Bubbles', cursive;" class="invalid-feedback">Acepte los términos para continuar.</div>
             </label>
           </div>
-          <button type="submit" class="btn btn-primary">Register</button><br><br>
+          <button style="font-family: 'Rubik Bubbles', cursive;color: antiquewhite;width:500px" type="submit" class="btn btn-primary">Registrarse</button><br><br>
           <!--<p>Already have an account? <a href="/login">Log in!</a></p><br><br><br><br> -->
       
       
         </form>
         </div>
       </center>
-</body>
-</html>
+      {% endblock %}
