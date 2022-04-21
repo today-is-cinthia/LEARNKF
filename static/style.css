@@ -3,3 +3,19 @@ body
     background-color: #235390;
 }
 
+#start{
+    position: relative;
+    animation-name: titulo;
+    animation-duration: 4s;
+  }
+
+  @keyframes titulo {
+    0%   { left:0px; top:0px;}
+    25%  { left:0px; top:400px;}
+    50% { left:0px; top: 0px; }
+  }
+}
+
+/* 50%  { left:400px; top:600px;}
+75%  { left:0px; top:200px;}
+100% { left:0px; top:0px;}

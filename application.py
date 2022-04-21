@@ -3,7 +3,7 @@
 import os
 from turtle import title
 
-from flask import Flask, session, flash, redirect, render_template, request, session, url_for, jsonify
+from flask import Flask, session, flash, redirect, render_template, request, session, url_for
 from flask_session import Session
 from sqlalchemy import create_engine
 from sqlalchemy.orm import scoped_session, sessionmaker
@@ -41,7 +41,7 @@ def register():
         confirmation = request.form.get("confirmation")
 
         if confirmation != password:
-            flash("passwords dont match")
+            flash("Las contraseñas no coinciden")
             return render_template("register.html")
 
         rows = db.execute(
@@ -52,10 +52,10 @@ def register():
                        {"username": user, "password": generate_password_hash(password)})
             db.commit()
         elif rows:
-            flash("username already exists")
+            flash("El usuario ya está registrado")
             return render_template("register.html")
 
-        return redirect("/registros")
+        return redirect("/levels")
 
     else:
         return render_template("register.html")
@@ -75,12 +75,15 @@ def login():
 
         session["user_id"] = rows[0]["id"]
 
-        return redirect("/")
+        return redirect("/levels")
     else:
         return render_template("login.html")
     return render_template("login.html")
 
-@app.route("/registros")
-def registros():
-    return render_template("registros.html")
+@app.route("/levels")
+def levels():
+    return render_template("levels.html")
 
+@app.route("/colors")
+def colors():
+    return render_template("colors.html")

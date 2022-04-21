@@ -9,6 +9,13 @@
     <h1 style="font-family: 'Rubik Glitch', cursive;color: antiquewhite;">¡Inicia sesión para jugar!</h1>
     <img src="https://d35aaqx5ub95lt.cloudfront.net/images/331a32943ff73be28537dfc7469d5639.svg" ><br>
 <form action="/login" class="was-validated" method="post">
+  {% if get_flashed_messages() %}
+  <header>
+    <br><div style="font-family: 'Rubik Bubbles', cursive; width: 500px;" class="alert alert-danger" role="alert">
+      {{ get_flashed_messages() | join(" ") }}
+    </div>
+  </header>
+  {% endif %}
   <div class="form-group">
     <br><br><label style="font-family: 'Rubik Bubbles', cursive;color: antiquewhite;" for="uname">Usuario:</label>
     <input style=" width:500px" type="text" class="form-control" id="uname" placeholder="Enter username" name="username" required>

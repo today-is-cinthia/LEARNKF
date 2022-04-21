@@ -1,0 +1,37 @@
+{% extends "layout.html" %}
+{% block title %}
+{% endblock %}
+
+{% block main %}
+<script src="/static/script.js" ></script>
+
+<a href="/levels"><button type="button" class="btn-close btn-close-white" aria-label="Close"></button></a>
+<center>
+    <h1 style="font-family: 'Rubik Glitch', cursive; color:antiquewhite;">Level 1</h1>
+    <h1 id="titulo" style="font-family: 'Rubik Bubbles', cursive; color:antiquewhite; margin-top: 100px; ">Escoge una opción para cambiar el color!</h1>
+    <br><br><img style="height: 200px;" src="https://www.pinclipart.com/picdir/big/255-2558904_colores-en-ingls-todos-los-colores-en-ingls.png">
+
+
+
+<br><br>
+    <button onclick="green()" style="font-family: 'Rubik Bubbles', cursive;color: antiquewhite;width:100px" type="button" class="btn btn-success">Green</button>
+
+<button onclick="red()" style="background-color: firebrick;font-family: 'Rubik Bubbles', cursive;color: antiquewhite;width:100px" type="button" class="btn ">Red</button>
+
+<button onclick="white()" style="background-color: antiquewhite;font-family: 'Rubik Bubbles', cursive;color: #000;width:100px" type="button" class="btn ">White</button>
+
+<button onclick="orange()" style="background-color: orange;font-family: 'Rubik Bubbles', cursive;color:antiquewhite ;width:100px" type="button" class="btn ">Orange</button>
+
+<button onclick="yellow()" style="background-color: yellow;font-family: 'Rubik Bubbles', cursive;color:black;width:100px" type="button" class="btn ">Yellow</button>
+
+<button onclick="blue()" style="background-color: steelblue;font-family: 'Rubik Bubbles', cursive;color:white;width:100px" type="button" class="btn ">Blue</button>
+
+<button onclick="purple()" style="background-color:mediumorchid;font-family: 'Rubik Bubbles', cursive;color:white;width:100px" type="button" class="btn ">Purple</button><br><br>
+
+<button onclick="brown()" style="background-color:saddlebrown;font-family: 'Rubik Bubbles', cursive;color:white;width:100px" type="button" class="btn ">Brown</button>
+
+<button onclick="turquoise()" style="background-color:turquoise;font-family: 'Rubik Bubbles', cursive;color:white;width:110px" type="button" class="btn ">Turquoise</button>
+
+<button onclick="gray()" style="background-color:gray;font-family: 'Rubik Bubbles', cursive;color:white;width:100px" type="button" class="btn ">Gray</button>
+</center>
+{% endblock %}
