@@ -87,3 +87,7 @@ def levels():
 @app.route("/colors")
 def colors():
     return render_template("colors.html")
+
+@app.route("/tarjetasmemoria")
+def tarjetasmemoria():
+    return render_template("tarjetas.html")
