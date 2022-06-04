@@ -1,5 +1,3 @@
-
-
 {% extends "layout.html" %}
 {% block title %}
 {% endblock %}
@@ -7,8 +5,10 @@
 
 {% block main %}
 
+<a href="/colors"><button type="button" class="btn-close btn-close-white" aria-label="Close"></button></a>
+<div class="cuerpo">
 <section class="section1">
-<h1> Memory Color Game</h1>
+<h1 style="font-family: 'Rubik Glitch', cursive; color:antiquewhite; margin-top: 10px;">Color Memory Game</h1><br><br>
 <table> 
     <tr> 
         <td> <button id="0" onclick="destapar(0)"> </button></td>
@@ -16,7 +16,6 @@
         <td> <button id="2" onclick="destapar(2)"> </button></td>
         <td> <button id="3" onclick="destapar(3)"> </button></td>
     </tr>
-
     <tr> 
         <td> <button id="4" onclick="destapar(4)"> </button></td>
         <td> <button id="5" onclick="destapar(5)"> </button></td>
@@ -40,12 +39,12 @@
 </table>
 </section>
 
-    <section class="section2"> 
-        <h2 class="estadisticas">Aciertos: 0</h2>
-        <h2 class="estadisticas">Tiempo: 30 segundos</h2>
-        <h2 class="estadisticas">Movimientos: 0</h2>
-    </section>
-
+<section class="section2"> 
+    <h2 id="aciertos" class="estadisticas">Aciertos: 0</h2>
+    <h2 id="t-restante" class="estadisticas">Tiempo: 30 segundos</h2>
+    <h2 id="movimientos" class="estadisticas">Movimientos: 0</h2>
+</section>
+</div>
     <script src="/static/main.js"> </script>
 
 {% endblock %}
