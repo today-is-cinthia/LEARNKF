@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap');
 body
 {
     background:   rgb(2,0,36);
@@ -76,5 +77,53 @@ button:hover{
   padding: 8px 20px;
   box-sizing: border-box;
 
+}
+
+#contenedoranimales{
+  background-color: #FFC562;
+	max-width: 700px;
+	margin: auto;
+	border: 2px solid #000;
+	border-radius: 20px;
+	display: flex;
+	padding: 50px 0;
+}
+
+.izquierdo{
+	width: 70%;
+	font-size: 80px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.derecha{
+	width: 30%;
+}
+.msj{
+	font-size: 40px;
+	height: 50px;
+}
+.derecha{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.opcion{
+	width: 100px;
+	height: 80px;
+	border: 1px solid  #000;
+	font-size: 20px;
+	margin-bottom: 20px;
+	border-radius: 50%;
+	cursor: pointer;
+	background-color: #000;
+	color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.opcion:hover{
+	background-color: #262626;
 }
 

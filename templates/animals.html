@@ -1,0 +1,25 @@
+{% extends "layout.html" %}
+{% block title %}
+{% endblock %}
+
+{% block main %}
+<h1 style="font-family: 'Rubik Glitch', cursive; color:antiquewhite; margin-top: 10px;">Animals quizz Game</h1><br><br>
+<div id="contenedoranimales" class="container">
+    <div class="izquierdo">
+        <div class="container-operacion">
+             <span id="animal"><img src="https://th.bing.com/th/id/OIP.5GK5Gsy9wwZYr0TfAWwmvwAAAA?pid=ImgDet&w=384&h=384&rs=1" alt="vaca"></span>
+             <span class="resultado" id="resultado"> 18</span>
+         </div>
+         <span class="msj" id="msj">
+                 
+         </span>
+    </div>
+    <div class="derecha">
+        <span id="op1" class="opcion" onclick="controlarRespuesta(this)">Cow</span>
+        <span id="op2" class="opcion" onclick="controlarRespuesta(this)">Alligator</span>
+        <span id="op3" class="opcion" onclick="controlarRespuesta(this)">Bird</span>
+    </div>
+</div>
+
+<script src="/static/animals.js"></script>
+{% endblock %}

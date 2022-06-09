@@ -34,6 +34,7 @@ function contarTiempo(){
         if(timer == 0){
             clearInterval(time);
             bloqueartarjetas();
+            mostrartiempo.innerHTML = `Game oveeeeeeeer. You ran out of time :(`
         }
     },1000)
 }
@@ -58,49 +59,49 @@ function destapar(id){
         tarjeta2.innerHTML = segundoresultado;
         tarjeta2.disabled = true;
         mov ++;
-        mostrarmov.innerHTML = `Movimientos: ${mov}`;
+        mostrarmov.innerHTML = `Movements: ${mov}`;
 
         if(primerresultado == 'azul' && segundoresultado == 'blue'){
             tarjetasdestapadas = 0;
             aciertos++;
-            mostraraciertos.innerHTML = `Aciertos: ${aciertos}`;
+            mostraraciertos.innerHTML = `Bull's eye: ${aciertos}`;
             
         }else if( primerresultado == 'blue' && segundoresultado == 'azul'){
             tarjetasdestapadas = 0;
             aciertos++;
-            mostraraciertos.innerHTML = `Aciertos: ${aciertos}`;
+            mostraraciertos.innerHTML = `Bull's eye: ${aciertos}`;
         }
         else if(primerresultado == 'rojo' && segundoresultado == 'red'){
             tarjetasdestapadas = 0;
             aciertos++;
-            mostraraciertos.innerHTML = `Aciertos: ${aciertos}`;
+            mostraraciertos.innerHTML = `Bull's eye: ${aciertos}`;
 
         }else if(primerresultado == 'red' && segundoresultado == 'rojo'){
             tarjetasdestapadas = 0;
             aciertos++;
-            mostraraciertos.innerHTML = `Aciertos: ${aciertos}`; 
+            mostraraciertos.innerHTML = `Bull's eye: ${aciertos}`; 
         }
         else if(primerresultado == 'amarillo' && segundoresultado == 'yellow'){
             tarjetasdestapadas = 0;
             aciertos++;
-            mostraraciertos.innerHTML = `Aciertos: ${aciertos}`;
+            mostraraciertos.innerHTML = `Bull's eye: ${aciertos}`;
         }else if(primerresultado == 'yellow' && segundoresultado == 'amarillo'){
             tarjetasdestapadas = 0;
             aciertos++;
-            mostraraciertos.innerHTML = `Aciertos: ${aciertos}`;
+            mostraraciertos.innerHTML = `Bull's eye: ${aciertos}`;
         }
         else if(primerresultado == 'café'  && segundoresultado == 'brown' ){
             tarjetasdestapadas = 0;
             aciertos++;
-            mostraraciertos.innerHTML = `Aciertos: ${aciertos}`;
+            mostraraciertos.innerHTML = `Bull's eye: ${aciertos}`;
         }else if(primerresultado == 'brown' && segundoresultado == 'café'){
             tarjetasdestapadas = 0;
             aciertos++;
-            mostraraciertos.innerHTML = `Aciertos: ${aciertos}`;
+            mostraraciertos.innerHTML = `Bull's eye: ${aciertos}`;
         }else if(primerresultado == 'green' &&  segundoresultado == 'verde'){
             tarjetasdestapadas = 0;
             aciertos++;
-            mostraraciertos.innerHTML = `Aciertos: ${aciertos}`;
+            mostraraciertos.innerHTML = `Bull's eye: ${aciertos}`;
         }
         else if(primerresultado == 'verde' && segundoresultado == 'green' ){
             tarjetasdestapadas = 0;
@@ -109,29 +110,29 @@ function destapar(id){
         }else if(primerresultado == 'blanco'  && segundoresultado == 'white'){
             tarjetasdestapadas = 0;
             aciertos++;
-            mostraraciertos.innerHTML = `Aciertos: ${aciertos}`;
+            mostraraciertos.innerHTML = `Bull's eye: ${aciertos}`;
         }else if(primerresultado == 'white' && segundoresultado == 'blanco'){
             tarjetasdestapadas = 0;
             aciertos++;
-            mostraraciertos.innerHTML = `Aciertos: ${aciertos}`; 
+            mostraraciertos.innerHTML = `Bull's eye: ${aciertos}`; 
         }
         else if(primerresultado == 'morado' && segundoresultado == 'purple'){
             tarjetasdestapadas = 0;
             aciertos++;
-            mostraraciertos.innerHTML = `Aciertos: ${aciertos}`;
+            mostraraciertos.innerHTML = `Bull's eye: ${aciertos}`;
         }else if( primerresultado == 'purple' && segundoresultado == 'morado'){
             tarjetasdestapadas = 0;
             aciertos++;
-            mostraraciertos.innerHTML = `Aciertos: ${aciertos}`;
+            mostraraciertos.innerHTML = `Bull's eye: ${aciertos}`;
         }
         else if(primerresultado == 'turquesa'  && segundoresultado == 'turquoise' ){
             tarjetasdestapadas = 0;
             aciertos++;
-            mostraraciertos.innerHTML = `Aciertos: ${aciertos}`;
+            mostraraciertos.innerHTML = `Bull's eye: ${aciertos}`;
         }else if( primerresultado == 'turquoise' && segundoresultado == 'turquesa'){
             tarjetasdestapadas = 0;
             aciertos++;
-            mostraraciertos.innerHTML = `Aciertos: ${aciertos}`;
+            mostraraciertos.innerHTML = `Bull's eye: ${aciertos}`;
         }
         else{
             console.log(primerresultado)
@@ -146,8 +147,8 @@ function destapar(id){
         }
         if(aciertos == 8){
             clearInterval(time);
-            mostraraciertos.innerHTML = `Aciertos: ${aciertos} ʕ•́ᴥ•̀ʔっ♥`;
-            mostrarmov.innerHTML = `Movimientos: ${mov} (◑_◑)`;
+            mostraraciertos.innerHTML = `Bull's eye: ${aciertos} ʕ•́ᴥ•̀ʔっ♥`;
+            mostrarmov.innerHTML = `Movements: ${mov} (◑_◑)`;
             mostrartiempo.innerHTML = `Good job! You only took ${30 - timer } seconds to complete it`
         }
 
