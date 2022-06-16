@@ -95,3 +95,7 @@ def tarjetasmemoria():
 @app.route("/animals")
 def animals():
     return render_template("animals.html")
+
+@app.route("/sopadeletras")
+def animals():
+    return render_template("sopadeletras.html")
