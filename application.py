@@ -97,5 +97,5 @@ def animals():
     return render_template("animals.html")
 
 @app.route("/sopadeletras")
-def animals():
+def sopadeletras():
     return render_template("sopadeletras.html")
