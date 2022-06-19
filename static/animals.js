@@ -35,7 +35,7 @@ let choice_que = document.querySelectorAll(".choice_que");
 
 
 let index = 0;
-let timer = 0;
+let timer = 20;
 let interval = 0;
 
 //total points
@@ -60,11 +60,11 @@ exit.addEventListener("click", () => {
 //Creating Timer For Quiz Timer Section
 
 let countDown = () => {
-    if (timer === 20) {
+    if (timer === 0) {
         clearInterval(interval);
         next_question.click();
     } else {
-        timer++;
+        timer--;
         time.innerText = timer;
     }
 }
@@ -80,7 +80,7 @@ let loadData = () => {
     option4.innerText = MCQS[index].choice4;
 
     //    timer start
-    timer = 0;
+    timer = 15;
 }
 
 loadData();
