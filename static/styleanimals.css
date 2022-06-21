@@ -34,7 +34,7 @@ body {
 }
 
 #start:hover {
-    background: #ff5235;
+    background: #2a832f;
     color: #e7f1fa;
 }
 
@@ -52,7 +52,7 @@ body {
 
 #guide h2 {
     font-size: 60px;
-    color: #ff5235;
+    color: #2a832f;
 }
 
 #guide h4 {
@@ -77,7 +77,7 @@ body {
     border: none;
     outline: none;
     color: #e7f1fa;
-    background: #ff5235;
+    background: #2a832f;
     border: 1px solid #b0c4d8;
     border-radius: 20px 5px;
     font-size: 18px;
@@ -89,7 +89,7 @@ body {
 }
 
 #guide #button button:hover {
-    background: #e91e3a;
+    background: #f69d9e;
 }
 
 #quiz {
@@ -114,13 +114,13 @@ body {
 #quiz #quiz_header h5 {
     font-size: 28px;
     margin: 0 20px;
-    color: #ff5235;
+    color: #2a832f;
 }
 
 #quiz #quiz_header #timer {
     height: 50px;
     width: 200px;
-    background: #ff5235;
+    background:#2a832f;
     color: #e7f1fa;
     border: 1px solid #b0c4d8;
     font-size: 18px;
@@ -177,7 +177,7 @@ body {
 #quiz #optionList h4 {
     height: 50px;
     width: 535px;
-    background: #ff5235;
+    background: #2a832f;
     line-height: 50px;
     margin: 5px 0;
     border-radius: 7px;
@@ -190,11 +190,11 @@ body {
 }
 
 #quiz #optionList h4:hover {
-    background: #e91e3a;
+    background: #f69d9e;
 }
 
 #quiz #optionList .active {
-    background: #e91e3a;
+    background: #f69d9e;
 }
 
 #quiz #optionList .disabled {
@@ -226,7 +226,7 @@ body {
     width: 100px;
     display: grid;
     place-items: center;
-    background: #ff5235;
+    background:#2a832f ;
     position: absolute;
     right: 0;
     color: #fff;
@@ -238,7 +238,7 @@ body {
 }
 
 #quiz #answersSection h3:hover {
-    background: #e91e3a;
+    background: #f69d9e;
 }
 
 #quiz #answersSection h3:first-child:hover {
@@ -260,7 +260,7 @@ body {
 
 #container #result i {
     font-size: 180px;
-    color: #ff5235;
+    color: #2a832f;
     position: absolute;
     top: 30px;
     left: 120px;
@@ -285,7 +285,7 @@ body {
     width: 260px;
     border: none;
     outline: none;
-    background: #ff5235;
+    background: #2a832f;
     color: #e7f1fa;
     position: absolute;
     left: 105px;
@@ -301,5 +301,5 @@ body {
 }
 
 #container #result button:hover {
-    background: #e91e3a;
+    background: #f69d9e;
 }

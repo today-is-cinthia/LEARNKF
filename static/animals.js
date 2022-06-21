@@ -1,5 +1,6 @@
 //Start Section
 let start = document.querySelector("#start");
+let page = document.querySelector("#nextpage");
 
 //guide Section
 let guide = document.querySelector("#guide");
@@ -43,6 +44,8 @@ let correct = 0;
 
 //store Answer Value
 let UserAns = undefined;
+
+page.style.display="none";
 
 //what happen when 'Start' Button Will Click
 start.addEventListener("click", () => {
@@ -147,6 +150,7 @@ next_question.addEventListener("click", () => {
         quiz.style.display = "none";
         points.innerHTML = `You Got ${correct} Out Of ${MCQS.length}`;
         result.style.display = "block";
+        page.style.display = "block";
     }
     for (i = 0; i <= 3; i++) {
         choice_que[i].classList.remove("disabled");

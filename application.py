@@ -99,3 +99,8 @@ def animals():
 @app.route("/sopadeletras")
 def sopadeletras():
     return render_template("sopadeletras.html")
+
+
+@app.route("/tictactoe")
+def tictactoe():
+    return render_template("tictactoe.html")
