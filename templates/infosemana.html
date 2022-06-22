@@ -1,0 +1,31 @@
+{% extends "layout.html" %}
+{% block title %}
+    INICIO
+{% endblock %}
+
+{% block main %}
+
+    <center>
+        <h1 style="font-family: 'Rubik Glitch', cursive; color:antiquewhite; margin-top: 10px;">DIAS DE LA SEMANA</h1>
+    </center>
+
+    <div class="contenedor">
+        <div class="col">
+            <p style="font-family: 'Rubik Glitch', cursive; color:antiquewhite; margin-top: 10px;"> Aprender los días de la semana en inglés en uno de los escalones básicos cuando estudias este idioma, pues de esta manera es como concretaremos alguna cita o mencionaremos un acontecimiento especial que se llevó o se llevará a cabo en determinada fecha.</p>
+        </div>
+        <div class="col">
+            <iframe width="400" height="300" src="https://www.youtube.com/embed/S2bB8vqriMc" title="Video Semana" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <div class="contenedor">
+        <div class="col">
+            <a href="/vocasemana"><button id="start" style="font-family: 'Rubik Bubbles', cursive;color: antiquewhite;width:500px" type="submit" class="btn btn-success">Vocabulario</button></a> 
+        </div>
+        <div class="col">
+            
+            <a href="/"><button id="start" style="font-family: 'Rubik Bubbles', cursive;color: antiquewhite;width:500px" type="submit" class="btn btn-success">Siguiente</button><br><br><br></a> 
+        </div>
+    </div>
+
+{% endblock %}

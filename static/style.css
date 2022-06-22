@@ -206,9 +206,6 @@ button::-moz-focus-inner {
 }
 
 .contenedor .col {
-width: 50%;
+  width: 50%;
 }
 
-.x165{
-  style="font-family: 'Rubik Glitch', cursive; color:antiquewhite; margin-top: 10px;"
-}

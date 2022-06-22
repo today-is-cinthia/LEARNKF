@@ -112,3 +112,19 @@ def infoanimals():
 @app.route("/VocaAnimals")
 def vocaanimals():
     return render_template("vocaanimals.html")
+
+@app.route("/vocacolors")
+def vocacolors():
+    return render_template("vocacolors.html")
+
+@app.route("/infocolors")
+def infocolors():
+    return render_template("infocolors.html")
+
+@app.route("/vocasemana")
+def vocasemana():
+    return render_template("vocasemana.html")
+
+@app.route("/infosemana")
+def infosemana():
+    return render_template("infosemana.html")

@@ -1,0 +1,31 @@
+{% extends "layout.html" %}
+{% block title %}
+    INICIO
+{% endblock %}
+
+{% block main %}
+
+    <center>
+        <h1 style="font-family: 'Rubik Glitch', cursive; color:antiquewhite; margin-top: 10px;">COLORS</h1>
+    </center>
+
+    <div class="contenedor">
+        <div class="col">
+            <p style="font-family: 'Rubik Glitch', cursive; color:antiquewhite; margin-top: 10px;"> Aprender los colores en inglés es muy fácil y divertido, aparte es uno de los primeros conocimientos que los nuevos hablantes adquieren
+                En el siguiente nivel aprendaras la forma correcta en que se escriben los colores en ingles</p>
+        </div>
+        <div class="col">
+            <iframe width="400" height="300" src="https://www.youtube.com/embed/JR3fFeBFThI" title="Video Colors" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <div class="contenedor">
+        <div class="col">
+            <a href="/vocacolors"><button id="start" style="font-family: 'Rubik Bubbles', cursive;color: antiquewhite;width:500px" type="submit" class="btn btn-success">Vocabulario</button></a> 
+        </div>
+        <div class="col">
+            <a href="/colors"><button id="start" style="font-family: 'Rubik Bubbles', cursive;color: antiquewhite;width:500px" type="submit" class="btn btn-success">Siguiente</button><br><br><br></a> 
+        </div>
+    </div>
+
+{% endblock %}
