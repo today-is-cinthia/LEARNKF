@@ -104,11 +104,3 @@ def sopadeletras():
 @app.route("/tictactoe")
 def tictactoe():
     return render_template("tictactoe.html")
-
-@app.route("/bonuslevels")
-def bonuslevels():
-    return render_template("bonuslevels.html")
-
-@app.route("/hexgl")
-def hexgl():
-    return render_template("index.html")
