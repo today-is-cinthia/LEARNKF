@@ -104,3 +104,11 @@ def sopadeletras():
 @app.route("/tictactoe")
 def tictactoe():
     return render_template("tictactoe.html")
+
+@app.route("/infoanimals")
+def infoanimals():
+    return render_template("infoanimals.html")
+
+@app.route("/VocaAnimals")
+def vocaanimals():
+    return render_template("vocaanimals.html")

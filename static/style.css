@@ -201,3 +201,14 @@ button::-moz-focus-inner {
   color: gray;
 }
 
+.contenedor{
+  display: flex;
+}
+
+.contenedor .col {
+width: 50%;
+}
+
+.x165{
+  style="font-family: 'Rubik Glitch', cursive; color:antiquewhite; margin-top: 10px;"
+}
