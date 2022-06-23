@@ -136,3 +136,19 @@ def puzzle():
 @app.route("/ahorcado")
 def ahorcado():
     return render_template("ahorcado.html")
+
+@app.route("/bonus")
+def bonus():
+    return render_template("bonus.html")
+
+@app.route("/dino")
+def dino():
+    return render_template("dino.html")
+
+@app.route("/dash")
+def dash():
+    return render_template("dash.html")
+
+@app.route("/fights")
+def fights():
+    return render_template("fights.html")
