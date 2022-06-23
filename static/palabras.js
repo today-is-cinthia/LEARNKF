@@ -1,0 +1,1 @@
+const words = ['Sunday','Monday', 'Tuesday','Wednsday','Thursday','Friday','Saturday','Days','Week'];

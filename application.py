@@ -128,3 +128,11 @@ def vocasemana():
 @app.route("/infosemana")
 def infosemana():
     return render_template("infosemana.html")
+
+@app.route("/puzzle")
+def puzzle():
+    return render_template("puzzle.html")
+
+@app.route("/ahorcado")
+def ahorcado():
+    return render_template("ahorcado.html")
